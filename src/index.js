@@ -1,5 +1,6 @@
 /* eslint-disable no-console */
 import React, { PropTypes } from 'react';
+import ReactDOM from 'react-dom';
 
 export default class App extends React.Component {
   render () {
@@ -8,3 +9,8 @@ export default class App extends React.Component {
     );
   }
 }
+
+ReactDOM.render(
+  <App />,
+  document.getElementById("app")
+);
